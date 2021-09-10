@@ -1,0 +1,160 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    align-content: stretch;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 1056px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1056px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;} 
+  }
+
+/* style the template of site of Palette of heat*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'shrikhand', sans-serif;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 2560px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-inline: 7rem;
+      margin-block-start: 1rem;
+      margin-block-end: 1rem;
+      margin-inline-end: 7rem;
+      margin-inline-start: 7rem;
+    }
+    img.header.logo {
+      padding: 20px 0px 20px 0px;
+      width: 150px;
+    }
+    .navbar a {
+        border: solid #f1f1f1;
+        border-radius: 19px 19px 19px 19px;
+        padding: 22px;
+        background-color: #ff79da;
+        }
+        a.fil {
+        text-decoration: none;
+        color: black;
+        margin-right: 1rem;
+        padding-right: 5rem;
+        }
+        
+        .navbar {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-content: stretch;
+        }
+        }
+        section.menus {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+        section.Plats {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
+            align-items: baseline;
+        }
+        section.desserts {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: baseline;
+        }
