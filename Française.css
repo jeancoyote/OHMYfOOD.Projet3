@@ -104,6 +104,7 @@ body {
       'footer footer footer footer footer footer';
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 2560px) {
     header {
       display: flex;
@@ -169,3 +170,4 @@ body {
          ul.un {
             list-style: none;
         }
+        
