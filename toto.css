@@ -286,10 +286,28 @@ i.far.fa-heart {
   float: right;
   margin-top: -41px;
   margin-right: 11px;
+  opacity: 1;
 }
-i.far.fa-heart :hover i.far.fa-heart {
-  animation: animateHeart .4s;
-    fill: #9356DC;
+span.hoverheart {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+i.fas.fa-heart {
+  opacity: 0;
+  margin-top: -14px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+}
+.hoverheart:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.hoverheart:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 
 footer {
