@@ -121,6 +121,92 @@ body {
   }
 }
 
+.loader__itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ededed;
+  animation: loader 0.01s;;
+  animation-delay: 1.10s;
+  animation-fill-mode: both;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.loader {
+  max-width: 15rem;
+  width: 100%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+.loader {
+  fill: none;
+  stroke-width: 3.5;
+  animation-name: preloader;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 170px 170px;
+  will-change: transform;
+}
+.circle:nth-of-type(1) {
+  stroke-dasharray: 550px;
+}
+.circle:nth-of-type(2) {
+  stroke-dasharray: 500px;
+}
+.circle:nth-of-type(3) {
+  stroke-dasharray: 450px;
+}
+.circle:nth-of-type(4) {
+  stroke-dasharray: 300px;
+}
+.delay-1 {
+  animation-delay: .1s;
+}
+.delay-2 {
+  animation-delay: .2s;
+}
+.delay-3 {
+  animation-delay: .3s;
+}
+.delay-4 {
+  animation-delay: .4s;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes preloader {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apparition {
+    0% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 100%;
+    }
+  }
+  @keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+  }
+}
 
 @media screen and (min-width: 320px) and (max-width: 2560px) {
 div#myDiv {
@@ -128,6 +214,7 @@ div#myDiv {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin-inline: -1rem;
 }
 
 header {
@@ -206,13 +293,11 @@ section.navigation {
 a.fil {
   text-decoration: none;
   color: black;
-  padding-right: 5rem;
+  padding-right: 3rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  align-content: space-between;
 }
 i.fas.fa-store {
   color: #9356dc;
@@ -234,11 +319,12 @@ span.circle {
 }
 .navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-inline: -9px;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  align-content: stretch;
-  justify-content: space-around;
-  margin-inline: 9px;
+  align-items: center;
+  align-content: space-between;
 }
 h5 {
   font-size: unset;
@@ -275,9 +361,30 @@ a {
   cursor: progress;
   margin-inline: 0.7rem;
 }
+span.hoverheart {
+  display: flex;
+  float: right;
+  margin-top: -3rem;
+  margin-right: 1rem;
+  color: gray;
+}
+
+span.hoverheart::after {
+  content: "ï€„";
+  font-family: "Font Awesome 5 Free";
+  /* color: black !important; */
+  cursor: pointer;
+  fill: #818181 !important;
+}
+span.hoverheart:hover::after {
+  font-weight: bold;
+  color: purple;
+}
+
 footer {
   list-style: none;
   background-color: #353535;
+  margin-inline: -2rem;
 }
 ul.un {
   list-style: none;
@@ -295,24 +402,23 @@ li {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   section.navigation {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
 }
 .navbar {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-inline: 9px;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-inline: -23px;
+  align-items: stretch;
 }
 a.fil {
   text-decoration: none;
   color: black;
-  padding-right: 5rem;
+  padding-right: 0rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-between;
 }
 i.fas.fa-mobile-alt {
   margin-inline: 2rem;
@@ -332,7 +438,8 @@ i.fas.fa-store {
     flex-wrap: nowrap;
     margin-inline: -9px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
 }
 }
 /* Create four equal columns that floats next to each other */
@@ -359,6 +466,7 @@ i.fas.fa-store {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-inline: -2.5rem;
 }
 
 /* Create four equal columns */
