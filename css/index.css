@@ -37,7 +37,6 @@
 * {
   box-sizing: border-box;
   }
-
 body {
   font-family: 'Roboto', 'shrikhand', sans-serif;
   background-color: white;
@@ -51,7 +50,6 @@ body {
   margin-inline-end: 2.5rem;
   position: absolute;
 }
-
 /* Style the header */
 .header {
   grid-area: header;
@@ -60,7 +58,6 @@ body {
   text-align: center;
   font-size: 35px;
 }
-
 /* The grid container */
 .grid-container {
   display: grid;
@@ -70,29 +67,24 @@ body {
     'footer footer footer footer footer footer';
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
-
 .left,
 .middle,
 .right {
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
-
 /* Style the left column */
 .left {
   grid-area: left;
 }
-
 /* Style the middle column */
 .middle {
   grid-area: middle;
 }
-
 /* Style the right column */
 .right {
   grid-area: right;
 }
-
 /* Style the footer */
 .footer {
   grid-area: footer;
@@ -100,8 +92,6 @@ body {
   padding: 10px;
   text-align: center;
 }
-
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .grid-container  {
@@ -120,7 +110,6 @@ body {
     font-family: 'ROBOTO', 'shrikhand', sans-serif;
   }
 }
-
 .loader__itemContainer {
   display: flex;
   align-items: center;
@@ -137,14 +126,12 @@ body {
   width: 100%;
   z-index: 10000;
 }
-
 .loader {
   max-width: 15rem;
   width: 100%;
   height: auto;
   stroke-linecap: round;
 }
-
 .loader {
   fill: none;
   stroke-width: 3.5;
@@ -155,29 +142,30 @@ body {
   transform-origin: 170px 170px;
   will-change: transform;
 }
-.circle:nth-of-type(1) {
-  stroke-dasharray: 550px;
+  circle:nth-of-type(1) {
+    stroke-dasharray: 550px;
+} 
+  circle:nth-of-type(2) {
+    stroke-dasharray: 500px;
 }
-.circle:nth-of-type(2) {
-  stroke-dasharray: 500px;
+  circle:nth-of-type(3) {
+    stroke-dasharray: 450px;
 }
-.circle:nth-of-type(3) {
-  stroke-dasharray: 450px;
+  circle:nth-of-type(4) {
+    stroke-dasharray: 300px;
 }
-.circle:nth-of-type(4) {
-  stroke-dasharray: 300px;
+ .delay-1 {
+    animation-delay: .1s;
 }
-.delay-1 {
-  animation-delay: .1s;
-}
-.delay-2 {
-  animation-delay: .2s;
+ 
+ .delay-2 {
+    animation-delay: .2s;
 }
 .delay-3 {
-  animation-delay: .3s;
+    animation-delay: .3s;
 }
 .delay-4 {
-  animation-delay: .4s;
+    animation-delay: .4s;
 }
 @keyframes loader {
   0% { transform: rotate(0deg); }
@@ -200,14 +188,13 @@ body {
       transform: scale(1);
       opacity: 100%;
     }
-  }
+  } 
   @keyframes loader {
     100% {
       opacity: 0;
       z-index: -10;
   }
 }
-
 @media screen and (min-width: 320px) and (max-width: 2560px) {
 div#myDiv {
     display: flex;
@@ -216,7 +203,6 @@ div#myDiv {
     align-content: center;
     margin-inline: -1rem;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -342,7 +328,6 @@ p {
 a {
   text-decoration: none;
 }
-
 .container {
   position: relative;
   text-align: center;
@@ -368,9 +353,8 @@ span.hoverheart {
   margin-right: 1rem;
   color: gray;
 }
-
 span.hoverheart::after {
-  content: "ï€„";
+  content: "";
   font-family: "Font Awesome 5 Free";
   /* color: black !important; */
   cursor: pointer;
@@ -380,7 +364,6 @@ span.hoverheart:hover::after {
   font-weight: bold;
   color: purple;
 }
-
 footer {
   list-style: none;
   background-color: #353535;
@@ -447,14 +430,12 @@ i.fas.fa-store {
   float: left;
   width: 25%;
 }
-
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .column {
     width: 50%;
   }
 }
-
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -468,20 +449,17 @@ i.fas.fa-store {
   flex-wrap: wrap;
   margin-inline: -2.5rem;
 }
-
 /* Create four equal columns */
 .column {
   flex: 25%;
   padding: 20px;
 }
-
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .column {
     flex: 50%;
   }
 }
-
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .row {
@@ -495,11 +473,9 @@ i.fas.fa-store {
   transition: 0.3s;
   width: 100%;
 }
-
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 .container {
   padding: 2px 16px;
 }
@@ -535,4 +511,3 @@ article.card1 {
   object-fit: cover;
 }
 }
-
