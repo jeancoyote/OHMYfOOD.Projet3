@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="no-js" lang="fr-FR">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ohmyfood</title>
   <link rel="stylesheet" media="screen" type="text/css" href="css/index.css" />
-  <link rel="stylesheet" media="screen" type="text/css" href="scss/style.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="scss/composants/index" />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -17,181 +17,168 @@
   </script>
 </head>
 
+
 <body>
 
-
-  <div class="loader__itemContainer">
+    <div class="loader__itemContainer">
   
-    <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-       <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
-       <circle cx="170" cy="170" r="135" stroke="#404041"/>
-       <circle cx="170" cy="170" r="110" stroke="#E2007C"/>
-       <circle cx="170" cy="170" r="85" stroke="#404041"/>
-    </svg>
-    
+        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+           <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
+           <circle cx="170" cy="170" r="135" stroke="#404041"/>
+           <circle cx="170" cy="170" r="110" stroke="#E2007C"/>
+           <circle cx="170" cy="170" r="85" stroke="#404041"/>
+        </svg>
+        
+      </div>
+
+<header>
+  <div class="header__title">
+    <img class="header__img" alt="" src="https://zupimages.net/up/21/31/zorw.png">
   </div>
-
-  <div id="myDiv" class="animate-bottom">
-    <h2>Ohmyfood Restaurants</h2>
-    <p>Conquête du marché New Yorkais</p>
+  <div class="header__location">
+    <i class="fas fa-map-marker-alt"></i><p class="header__details">Paris, Belleville</p>
   </div>
-
-
-  <!--L'en tête de la page et la partie localisation-->
-
-
-  <header>
-    <div class="header">
-      <img class="header logo" src="https://zupimages.net/up/21/31/zorw.png" alt="image de présentation du site">
+  <div class="explore-location">
+    <div class="explore-location__title">
+      <h2>Réservez le menu qui vous convient</h2>
     </div>
-  </header>
+    <div class="explore-location__subtitle">
+      <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+    </div>
+    <a aria-label="Explorer nos restaurants" class="explore-location__button" href="#section2">
+      Explorer nos restaurants
+    </a>
+  </div>
+</header>
 
-  <!-- La Présentation navigation site -->
-
-  <section class="localisation">
-
-    <h1>Paris, belleville</h1>
-
-    <i class='fas fa-map-marker-alt'></i>
-
-
-  </section>
-
-  <!--Presentation des menus et Restaurants-->
-
-  <section class="Présentation">
-
-    <div class="Présentation">
-      <div class="menus">
-        <h2>Reserver le menu qui convient</h2>
+<section class="section-one">
+  <h3>Fonctionnement</h3>
+  <div class="section-fonctionnalities" id="section1">
+  <div class="minicard">
+    <div class="minicard__content">
+      <span class="circle">1</span>
+      <div class="miniicon">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <p>Choisissez un restaurant</p>
+    </div>
+  </div>
+  <div class="minicard">
+    <div class="minicard__content">
+        <span class="circle">2</span>
+        <div class="miniicon">
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <p>Composez votre menu</p>
       </div>
     </div>
-    <div class="choix">
-      <div class="Restaurants">
-        <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins</h3>
-      </div>
-    </div>
-
-    <!--Choix navigation restaurants-->
-
-
-    <div class="recherche">
-      <button>Explorer nos restaurants</button>
-    </div>
-
-  </section>
-
-  <!--Choix de menus de Dégustations et Restaurants-->
-
-  <section class="navigation">
-
-    <h4>Fonctionnement</h4>
-
-    <div class="navbar">
-      <a class="fil" href="#"><span class="circle">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</a>
-      <a class="fil" href="#"><span class="circle">2</span><i class="fas fa-list-ul"></i>Composez votre menus</a>
-      <a class="fil" href="#"><span class="circle">3</span><i class="fas fa-store"></i>Dégustez au restaurant</a>
-    </div>
-
-  </section>
-
-  <!--La partie Sélection des menus-->
-
-  <main>
-
-    <section id="Restaurants">
-
-      <!--Choix de menus de Dégustations et Restaurants-->
-
-      <h4>Restaurants</h4>
-
-      <div class="row">
-        <div class="column">
-          <article class="card">
-            <div class="gallery">
-              <div class="container">
-                <a target="_blank" href="Palette.html">
-                  <div class="top-right">Nouveau</div>
-                  <img src="https://zupimages.net/up/21/31/1oih.jpg" alt="Restos Ménilmontant">
-                  <h5>La Palette du Goût</h5>
-                  <p>Ménilmontant</p>
-                  <span class="hoverheart">
-                  </span>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-
-
-        <div class="column">
-          <article class="card">
-            <div class="gallery">
-              <div class="container">
-                <a target="_blank" href="LaNoteEnchantee.html">
-                  <div class="top-right">Nouveau</div>
-                  <img src="https://zupimages.net/up/21/37/ala8.jpg" alt="Restos Charonne">
-                  <h5>La note Enchantée</h5>
-                  <p>Charonne</p>
-                  <span class="hoverheart">
-                  </span>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-
-        <div class="column">
-          <article class="card">
-            <div class="gallery">
-              <a target="_blank" href="AlaFrançaise.html">
-                <img src="https://zupimages.net/up/21/31/oomv.jpg" alt="Restos Cité">
-                <h5>A la Française</h5>
-                <p>Cité Rouge</p>
-                <span class="hoverheart">
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
-
-
-        <div class="column">
-          <article class="card">
-            <div class="gallery">
-              <a target="_blank" href="DeliceDesSens.html">
-                <img src="https://zupimages.net/up/21/31/db8m.jpg" alt="Restos Folie-Méricourt">
-                <h5>Le Délice des Sens</h5>
-                <p>Folie-Méricourt</p>
-                <span class="hoverheart">
-                </span>
-              </a>
-            </div>
-          </article>
+      <div class="minicard">
+        <div class="minicard__content secondary">
+          <span class="circle">3</span>
+          <div class="miniicon">
+            <i class="fas fa-store"></i>
+          </div>
+          <p>Dégustez au restaurant</p>
         </div>
       </div>
+    </div>
+</section>
 
+<section class="section-two">
+  <h3>Restaurants</h3>
+<div class="section-restaurants" id="section2">
+  <a href="Palette.html">
+    <div class="restaurant-card">
+      <div class="novelties-flag">
+        <p>Nouveau</p>
+      </div>
+      <img src="https://zupimages.net/up/21/31/1oih.jpg"
+           alt="Restauration gastronomique traditionnelle Française à Paris"
+           title="La palette du goût, Gastronomie à Paris">
+      <div class="content">
+        <div class="card-content">
+          <h4 class="restaurant-name">La palette du goût</h4>
+            <span class="restaurant-location">Ménilmontant</span>
+        </div>
+        <div class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+            </svg>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="LaNoteEnchantee.html">
+    <div class="restaurant-card">
+      <div class="novelties-flag">
+        <p>Nouveau</p>
+      </div>
+      <img src="https://zupimages.net/up/21/37/ala8.jpg"
+           alt="Cuisine généreuse et rafinée, aux saveurs méditerranéennes"
+           title="La note enchantée, restaurant gastronomique méditerranéen à Paris"
+      >
+      <div class="content">
+        <div class="card-content">
+          <h4 class="restaurant-name">La note enchantée</h4>
+          <span class="restaurant-location">Charonne</span>
+        </div>
+        <div class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+            </svg>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="AlaFrançaise.html">
+    <div class="restaurant-card">
+      <img src="https://zupimages.net/up/21/31/oomv.jpg"
+           alt="La gastronomie traditionnelle à la française !"
+           title="Restaurant gastronomique à la française">
+      <div class="content">
+        <div class="card-content">
+          <h4 class="restaurant-name">À la française</h4>
+          <span class="restaurant-location">Cité Rouge</span>
+        </div>
+        <div class="heart">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="DeliceDesSens.html">
+    <div class="restaurant-card">
+      <img src="https://zupimages.net/up/21/31/db8m.jpg"
+           alt="Le délice des sens, la cuisine rafinée du monde à Paris"
+           title="Restaurant le délice des sens à Paris">
+      <div class="content">
+        <div class="card-content">
+          <h4 class="restaurant-name">Le délice des sens</h4>
+          <span class="restaurant-location">Folie-Méricourt</span>
+        </div>
+        <div class="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z"/>
+            </svg>
+        </div>
+      </div>
+    </div>
+  </a>
 
-    </section>
-
-  </main>
-
-  <!-- Le pied de page du site -->
-
-  <footer>
-
-    <ul class="un">
-      <li><strong>Ohmyfood</strong></li>
-      <li><i class="fas fa-utensils"></i>Proposer un Restaurant</li>
-      <li><i class="fas fa-hands-helping"></i>Devenir Partenaire</li>
-      <li>Mentions Légales</li>
-      <li>Contact</li>
-    </ul>
-
-  </footer>
-
+</div>
+</section>
+<footer>
+  <h3>ohmyfood</h3>
+  <ul>
+  <li><i class="fas fa-utensils"></i><a href="../pages/myrestaurant">Proposer un restaurant</a></li>
+  <li><i class="fas fa-hands-helping"></i><a href="../pages/membership">Devenir partenaire</a></li>
+  <li><a href="../pages/legal">Mentions légales</a></li>
+  <li><a href="mailto:contact@ohmyfood.com?subject=Demande%20de%20contact&body=J%20aimerais%20vous%20contacter%20">Contact</a></li>
+  </ul>
+</footer>
 </body>
 
 </html>
+

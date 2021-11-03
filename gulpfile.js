@@ -11,7 +11,7 @@ const sourcemaps = require('gulp-sourcemaps');
 function makeCss() {
   return gulp.src(['./scss/base.scss', './scss/**/*.scss'])
     .pipe(sourcemaps.init())
-    .pipe(gulpConcat("style.css"))
+    .pipe(gulpConcat("composants.css"))
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(autoprefixer({ cascade: false }))
