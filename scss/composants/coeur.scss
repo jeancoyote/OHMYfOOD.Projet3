@@ -1,54 +1,17 @@
-  span.hoverheart {
+  .heart {
     display: flex;
-    // float: right;
-    align-items: right;
-    // flex-direction: column;
-    // flex-wrap: nowrap;
-    // align-items: flex-start;
-    width:100%;
+    align-items: center;
+    width:3rem;
     height: 2rem;
     &::after{
         content:"\f004";
         font-family: "Font Awesome 5 Free";
-        // color: black !important;
         cursor: pointer;
-        // fill: #818181 !important;
-        // margin-right: 10px;
-        // transition-duration: 0.85s;
-        // transition-property: all;
-        // transition-timing-function: ease;
-        // float: right;
-        // margin-top: -41px;
-        // margin-right: 11px;
-        // opacity: 1;
-
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
     }
     &:hover::after{
         font-weight: bold;
-        color: purple;
-        background: -webkit-linear-gradient(white, $primaire, $secondaire);
+        background: -webkit-linear-gradient($primaire, $secondaire);
         -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
   }
-//   i.fas.fa-heart {
-//     opacity: 0;
-//     margin-top: -14px;
-//     background: linear-gradient(#FF79DA, #9356DC);
-//     -webkit-text-fill-color: transparent;
-//   }
-//   .hoverheart:hover .fas.fa-heart {
-//     opacity: 1;
-//     transition: 0.3s ease-in-out;
-//   }
-//   .hoverheart:hover .far.fa-heart {
-//     opacity: 0;
-//     transition: 0.3s ease-in-out;
-//   }
-//   i.icone-de-coeur-violet\.png {
-//     color: violet !important;
-//   }
-//   .coeur-violet :hover {
-//     color: #D579D5;
-//   }
