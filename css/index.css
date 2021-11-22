@@ -496,7 +496,7 @@ template {
   color: #818181;
 }
 
-.section-fonctionnalities .minicard .secondary {
+:hover.section-fonctionnalities .minicard .secondary {
   background-color: #F4EEF4 !important;
   border-radius: 15px;
 }
